@@ -313,3 +313,9 @@ install(DIRECTORY launch
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+set(cpackconfig "/opt/lrs_wara/src/lrs_wara/cpackconfig.cmake")
+if (EXISTS ${cpackconfig})
+  set(CPACK_PACKAGE_NAME "dji-sdk-demo")      
+  include(${cpackconfig})
+endif()
