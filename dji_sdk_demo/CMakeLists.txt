@@ -16,6 +16,8 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(DJIOSDK REQUIRED)
 
+include_directories(${DJIOSDK_INCLUDE_DIRS}/..)      
+
 find_package(darknet_ros QUIET)
 if(darknet_ros_FOUND)
     message(STATUS "Found darknet_ros package, will use it for object depth perception demo.")

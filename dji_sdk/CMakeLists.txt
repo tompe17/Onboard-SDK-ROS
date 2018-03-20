@@ -15,6 +15,8 @@ find_package(catkin REQUIRED COMPONENTS
 )
 find_package(DJIOSDK REQUIRED)
 
+include_directories(${DJIOSDK_INCLUDE_DIRS}/..)
+
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
